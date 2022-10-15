@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Friendship Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Friendship Survey Form</h1>
+    <p id="description">Please take your time and fill out this form</p>
+    <form id="survey-form">
+      <fieldset>
+       <label for="name" id="name-label">Name <input id="name" placeholder="please enter full name" type="text" required></label>
+       <label for="email" id="email-label">Email <input id="email" placeholder="enter a valid email" type="email" required></label>
+       <label for="number" id="number-label">Number <input id="number" placeholder="enter mobile number" type="number" min="10" max="15"></label> 
+      </fieldset>
+      <fieldset>
+        <label>How well do you know Renish?
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>100%</option>
+            <option>50%</option>
+            <option>10%</option>
+            <option>I don't know Renish</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="height-tall"><input id="height-tall" name="height" type="radio" value="One"/>Tall</label>
+        <label for="height-short"><input id="height-short" type="radio" name="height" value="Two"/>Short</label>
+      </filedset>
+      <fieldset>
+        <label for="behaviour"><input id="behaviour" type="radio" name="behaviour" value="nice"/>Good person</label>
+        <label for="behaviour-bad"><input type="radio" id="behaviour-bad" name="behaviour" value="worse"/>A bad person</label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-information"><input id="personal-information" type="checkbox" value="personal" name="personal-information"/>Personal Information</label>
+        <label for="public-information"><input type="checkbox" value="public" id="public-information" name="public-info">Public Information</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any description of Renish:
+          <textarea id="comments" rows="3" cols="30"></textarea>
+        </label>
+      </fielset>
+      <fieldset>
+        <button id="submit" type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
