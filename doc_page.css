@@ -1,0 +1,97 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#navbar {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 2 / 5;
+  position: fixed;
+}
+
+.nav-head-spacing-ln {
+    margin-right: -29px;
+    margin-left: -8px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.nav-spacing-ln {
+  margin-right: -29px;
+  margin-left: -8px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+#navbar ul {
+  grid-row: 2 / 5;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0px;
+}
+
+.Introduction {
+  border: 1px;
+  margin-bottom: 10px;
+}
+
+.Syntax {
+  border: 1px;
+  margin-bottom: 10px;
+}
+
+.Classes {
+  border: 1px;
+  margin-bottom: 10px;
+}
+
+.IDs {
+  border: 1px;
+  margin-bottom: 10px;
+}
+
+.Div {
+  border: 1px;
+  margin-bottom: 10px;
+}
+
+#main-doc {
+  grid-column: 3 / 12;
+  grid-row: 1 / 6;
+
+  padding-left: 200px;
+
+  border-width: 0px 0px 0px 1px;
+  border-style: solid;
+}
+code {
+  background-color: #dcdfe3;
+}
+section {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+li {
+  list-style: none;
+}
+
+@media (min-width: 600px) {
+  #main-doc {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #main-doc {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
